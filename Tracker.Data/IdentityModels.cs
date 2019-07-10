@@ -35,6 +35,8 @@ namespace Tracker.Data
         public DbSet<PersonalInfo> PersonalInfos { get; set; }
         public DbSet<Cycle> Cycles { get; set; }
         public DbSet<BasalBodyTemp> BasalBodyTemps { get; set; }
+        public DbSet<OvulationStick> OvulationSticks { get; set; }
+        public DbSet<CervicalMucus> CervicalMucusProperties { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();

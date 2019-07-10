@@ -55,9 +55,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BasalBodyTemp.cs" />
-    <Compile Include="CervicalMucous.cs" />
+    <Compile Include="CervicalMucus.cs" />
     <Compile Include="Cycle.cs" />
     <Compile Include="IdentityModels.cs" />
+    <Compile Include="Log.cs" />
     <Compile Include="OvulationStick.cs" />
     <Compile Include="PersonalInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

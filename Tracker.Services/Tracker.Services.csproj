@@ -55,10 +55,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TrackerService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tracker.Data\Tracker.Data.csproj">
+      <Project>{f5454471-2a0e-4cec-a2f6-0460baa1d23b}</Project>
+      <Name>Tracker.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tracker.Models\Tracker.Models.csproj">
+      <Project>{7ff14eef-c06a-46f8-9f5b-e160fdc0a7df}</Project>
+      <Name>Tracker.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

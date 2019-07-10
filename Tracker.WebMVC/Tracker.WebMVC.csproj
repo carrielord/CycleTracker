@@ -168,8 +168,14 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BasalBodyTempController.cs" />
+    <Compile Include="Controllers\CervicalMucusController.cs" />
+    <Compile Include="Controllers\CycleController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LogController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\OvSticksController.cs" />
+    <Compile Include="Controllers\PersonalInfoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -234,9 +240,18 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Log\Index.cshtml" />
+    <Content Include="Views\PersonalInfo\PersonalInfoCreate.cshtml" />
+    <Content Include="Views\PersonalInfo\PersonalInfoDetails.cshtml" />
+    <Content Include="Views\PersonalInfo\PersonalInfoEdit.cshtml" />
+    <Content Include="Views\PersonalInfo\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\BasalBodyTemp\" />
+    <Folder Include="Views\CervicalMucus\" />
+    <Folder Include="Views\Cycle\" />
+    <Folder Include="Views\OvSticks\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

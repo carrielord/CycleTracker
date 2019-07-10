@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Tracker.Data
 {
-    public class CervicalMucous
+    public class CervicalMucus
     {
         [Key]
         public int CMID { get; set; }
@@ -17,10 +17,15 @@ namespace Tracker.Data
         public Guid UserID { get; set; }
         public virtual PersonalInfo PersonalInfo { get; set; }
         [Required]
-        [Display(Name = "Does mucous indicate ovulation?")]
+        [Display(Name = "Does mucus indicate ovulation?")]
         public bool Ovulation { get; set; }
-        [Display(Name = "Description of mucous:")]
-        public string MucousDescription { get; set; }
+        [Required]
+        [Display(Name ="Date")]
+        public DateTime ObservationDate { get; set; }
+        [Display(Name = "Description of mucus:")]
+        public string MucusDescription { get; set; }
+        public DateTimeOffset CreatedTime { get; set; }
+        public DateTimeOffset? ModifiedTime { get; set; }
 
     }
 }

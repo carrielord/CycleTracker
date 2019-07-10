@@ -54,11 +54,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BBTModels\BBTCreate.cs" />
+    <Compile Include="BBTModels\BBTDetails.cs" />
+    <Compile Include="BBTModels\BBTUpdate.cs" />
+    <Compile Include="CMModels\CMCreate.cs" />
+    <Compile Include="CMModels\CMDetails.cs" />
+    <Compile Include="CMModels\CMUpdate.cs" />
+    <Compile Include="CycleModels\CycleCreate.cs" />
+    <Compile Include="CycleModels\CycleDetails.cs" />
+    <Compile Include="CycleModels\CycleUpdate.cs" />
+    <Compile Include="OvStickModels\OvStickCreate.cs" />
+    <Compile Include="OvStickModels\OvStickDetails.cs" />
+    <Compile Include="OvStickModels\OvStickUpdate.cs" />
+    <Compile Include="PersonalInfoModels\PersonalInfoCreate.cs" />
+    <Compile Include="PersonalInfoModels\PersonalInfoDetails.cs" />
+    <Compile Include="PersonalInfoModels\PersonalInfoUpdate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tracker.Data\Tracker.Data.csproj">
+      <Project>{F5454471-2A0E-4CEC-A2F6-0460BAA1D23B}</Project>
+      <Name>Tracker.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
