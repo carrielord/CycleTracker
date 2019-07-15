@@ -13,5 +13,9 @@ namespace Tracker.WebMVC.Controllers
         {
             return View();
         }
+        public ActionResult GoToViews()
+        {
+            return View();
+        }
     }
 }

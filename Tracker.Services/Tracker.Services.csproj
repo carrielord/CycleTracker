@@ -54,8 +54,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BBTService.cs" />
+    <Compile Include="CycleService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TrackerService.cs" />
+    <Compile Include="PersonalInfoService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

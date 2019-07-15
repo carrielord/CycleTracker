@@ -114,10 +114,10 @@ namespace Tracker.WebMVC.Controllers
             return RedirectToAction("PersonalInfoCreate", "PersonalInfo");
         }
 
-        private TrackerService CreateTrackerService()
+        private PersonalInfoService CreateTrackerService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());
-            var service = new TrackerService(userId);
+            var service = new PersonalInfoService(userId);
             return service;
         }
     }

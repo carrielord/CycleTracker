@@ -9,6 +9,7 @@ namespace Tracker.Models.BBTModels
 {
    public class BBTUpdate
     {
+        public int BBTID { get; set; }
         [Required]
         public double Temperature { get; set; }
         [Required]

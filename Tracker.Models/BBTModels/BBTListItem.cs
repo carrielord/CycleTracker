@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Tracker.Models.BBTModels
 {
-    public class BBTCreate
+    public class BBTListItem
     {
-        public string Comments { get; set; }
+        public int BBTID { get; set; }
         [Required]
         public double Temperature { get; set; }
         [Required]

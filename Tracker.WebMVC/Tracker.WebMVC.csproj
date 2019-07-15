@@ -245,12 +245,21 @@
     <Content Include="Views\PersonalInfo\PersonalInfoDetails.cshtml" />
     <Content Include="Views\PersonalInfo\PersonalInfoEdit.cshtml" />
     <Content Include="Views\PersonalInfo\Delete.cshtml" />
+    <Content Include="Views\Cycle\CycleCreate.cshtml" />
+    <Content Include="Views\Cycle\Index.cshtml" />
+    <Content Include="Views\Cycle\CycleDetails.cshtml" />
+    <Content Include="Views\Cycle\CycleEdit.cshtml" />
+    <Content Include="Views\Cycle\Delete.cshtml" />
+    <Content Include="Views\BasalBodyTemp\Index.cshtml" />
+    <Content Include="Views\BasalBodyTemp\BBTCreate.cshtml" />
+    <Content Include="Views\BasalBodyTemp\BBTDetails.cshtml" />
+    <Content Include="Views\BasalBodyTemp\BBTEdit.cshtml" />
+    <Content Include="Views\BasalBodyTemp\Delete.cshtml" />
+    <Content Include="Views\Log\GoToViews.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\BasalBodyTemp\" />
     <Folder Include="Views\CervicalMucus\" />
-    <Folder Include="Views\Cycle\" />
     <Folder Include="Views\OvSticks\" />
   </ItemGroup>
   <ItemGroup>

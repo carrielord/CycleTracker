@@ -9,6 +9,7 @@ namespace Tracker.Models.CycleModels
 {
     public class CycleUpdate
     {
+        public int CycleID { get; set; }
         [Required]
         [Display(Name = "Cycle Start Date")]
         public DateTime DateStarted { get; set; }

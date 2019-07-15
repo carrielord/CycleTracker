@@ -20,10 +20,14 @@ namespace Tracker.Data
         [Required]
         [Display(Name ="Cycle Start Date")]
         public DateTime DateStarted { get; set; }
+
         [Display(Name ="Cycle End Date")]
         public DateTime DateEnded { get; set; }
+
         public string Comments { get; set; }
+
         public DateTimeOffset CreatedTime { get; set; }
+
         public DateTimeOffset? ModifiedTime { get; set; }
     }
 }

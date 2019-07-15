@@ -8,10 +8,10 @@ using Tracker.Models.PersonalInfoModels;
 
 namespace Tracker.Services
 {
-    public class TrackerService
+    public class PersonalInfoService
     {
         private readonly Guid _userID;
-        public TrackerService(Guid userID)
+        public PersonalInfoService(Guid userID)
         {
             _userID = userID;
         }

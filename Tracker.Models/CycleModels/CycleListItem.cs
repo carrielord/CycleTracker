@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Tracker.Models.CycleModels
 {
-    public class CycleCreate
+    public class CycleListItem
     {
         public int CycleID { get; set; }
         [Required]
@@ -15,6 +15,5 @@ namespace Tracker.Models.CycleModels
         public DateTime DateStarted { get; set; }
         [Display(Name = "Cycle End Date")]
         public DateTime DateEnded { get; set; }
-        public string Comments { get; set; }
     }
 }

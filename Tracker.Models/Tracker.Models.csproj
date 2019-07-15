@@ -56,12 +56,14 @@
   <ItemGroup>
     <Compile Include="BBTModels\BBTCreate.cs" />
     <Compile Include="BBTModels\BBTDetails.cs" />
+    <Compile Include="BBTModels\BBTListItem.cs" />
     <Compile Include="BBTModels\BBTUpdate.cs" />
     <Compile Include="CMModels\CMCreate.cs" />
     <Compile Include="CMModels\CMDetails.cs" />
     <Compile Include="CMModels\CMUpdate.cs" />
     <Compile Include="CycleModels\CycleCreate.cs" />
     <Compile Include="CycleModels\CycleDetails.cs" />
+    <Compile Include="CycleModels\CycleListItem.cs" />
     <Compile Include="CycleModels\CycleUpdate.cs" />
     <Compile Include="OvStickModels\OvStickCreate.cs" />
     <Compile Include="OvStickModels\OvStickDetails.cs" />
