@@ -73,26 +73,45 @@ textarea {
     background-color: #649980;
     color: white;
     margin-top: 20px;
-    margin-left: -30px;
+    margin-left: 20px;
+    margin-right: 20px;
     font-size: 14px;
     padding-bottom: 20px;
 }
-
+#homepage-pic{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.circle{
+    border-radius: 100px;
+}
+#testimonial{
+    display: inline-block;
+}
+#testimonial-text {
+    margin-top:94px;
+}
 #why-use {
     background-color: #649980;
     color: white;
     margin-left: 20px;
     margin-top: 20px;
+    margin-right: 20px;
     padding-bottom: 20px;
-    position: relative;
-    top: 120px;
+}
+#testimonial h1 {
+    font-family: 'Assistant', sans-serif;
+    font-size: 40px;
+    vertical-align: middle;
+    color: #3F6050;
 }
 
 #already-member {
     background-color: #649980;
     color: white;
-    margin-left: -30px;
+    margin-left: 20px;
     margin-top: 10px;
+    margin-right: 20px;
     padding-bottom: 20px;
 }
 .homepage-right-blurb{

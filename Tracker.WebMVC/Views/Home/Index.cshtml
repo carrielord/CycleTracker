@@ -2,23 +2,31 @@
     ViewBag.Title = "Home Page";
 }
     <div class="row">
-        <div class="col-md-7" id="main-info">
+        <div class="col-12 col-md-7" id="main-info">
             <h1>Natural Cycle Log</h1>
             <p>Natural Cycle Log is a free website for tracking your body's cycles- naturally. It is a place to gather and log all methods of cycle tracking, from the dates of  your menstrual cycles to basal body temperature. This results in one convenient location to store your tracking, for easy and convenient use!</p>
             <div class="btn btn-default" id="main-button-text">
                 @Html.ActionLink("Sign Up", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })
             </div>
         </div>
-            <div class="col-md-4" id="why-use">
-                <h2>Why Use Natural Cycle Log</h2>
-                <p>
-                    Are you trying to prevent pregnancy, start a family, or just understand your body better? Whether it's free, natural birth control or fertility needs, we have you covered.
-                </p>
-                <p class="btn btn-default">@Html.ActionLink("Learn More", "About", "Home")</p>
-            </div>
+        <div class="col-6 col-md-4" id="homepage-pic">
+            <img src="~/Content/Assets/casey-horner-4rDCa5hBlCs-unsplash.jpg" class="circle" width="200" height="200" />
+        </div>
+    </div>
+    <div class="row" id="testimonial" height="259">
+        <div class="col-12 col-md-7" id="testimonial-text">
+            <h1>"So simple, so easy!" -no one, yet</h1>
+        </div>
+        <div class="col-12 col-md-4" id="why-use">
+            <h2>Why Use Natural Cycle Log</h2>
+            <p>
+                Are you trying to prevent pregnancy, start a family, or just understand your body better? Whether it's free, natural birth control or fertility needs, we have you covered.
+            </p>
+            <p class="btn btn-default">@Html.ActionLink("Learn More", "About", "Home")</p>
+        </div>
     </div>
     <div class="row">
-        <div class="col-md-7" id="already-member">
+        <div class="col-12 col-md-7" id="already-member">
             <h2>Already a Member?</h2>
             <p>Welcome! Sign in now.</p>
             <p class="btn btn-default">@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</p>
