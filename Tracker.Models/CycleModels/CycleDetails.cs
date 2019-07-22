@@ -16,7 +16,11 @@ namespace Tracker.Models.CycleModels
         [Display(Name = "Cycle End Date")]
         public DateTime DateEnded { get; set; }
         public string Comments { get; set; }
+        [Display(Name = "Created Time")]
+
         public DateTimeOffset CreatedTime { get; set; }
+        [Display(Name = "Modified Time")]
+
         public DateTimeOffset? ModifiedTime { get; set; }
     }
 }

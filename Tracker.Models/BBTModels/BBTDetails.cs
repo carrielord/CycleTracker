@@ -16,7 +16,10 @@ namespace Tracker.Models.BBTModels
         [Display(Name = "Date temperature was taken")]
         public DateTime DateOfTemp { get; set; }
         public string Comments { get; set; }
+        [Display(Name ="Created Time")]
         public DateTimeOffset CreatedTime { get; set; }
+        [Display(Name = "Modified Time")]
+
         public DateTimeOffset? ModifiedTime { get; set; }
     }
 }

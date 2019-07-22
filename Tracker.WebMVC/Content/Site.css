@@ -29,7 +29,7 @@ textarea {
 
 /*---------------------------Nav bar------------------------------------------*/
 .navbar {
-    background-color: #7d9964;
+    background-color: #3F6050;
 }
 
 #navbar-text a {
@@ -37,8 +37,32 @@ textarea {
     font-family: 'Assistant', sans-serif;
 }
 
+/*---------------------------Register Page------------------------------------*/
+.register-page {
+    background-color: #649980;
+    color: white;
+    padding: 10px 200px;
+    margin-top: 20px;
+}
+.register-entry {
+    background-color: #B2CCC0;
+    padding: 10px;
+}
 
-
+/*------------------------------Log In Page---------------------------*/
+.login-page {
+    background-color: #649980;
+    color: white;
+    padding: 10px 200px;
+    margin-top: 20px;
+}
+.login-page a{
+    color: white;
+}
+.login-entry {
+    background-color: #B2CCC0;
+    padding: 10px;
+}
 
 /*---------Home Page----------------*/
 /*#main-button-text a{
@@ -92,6 +116,10 @@ textarea {
 .personal-info-create a{
     color: white;
 }
+.personal-info-create-table {
+    background-color: #B2CCC0;
+    padding: 10px;
+}
 
 /*----------------Personal Info Details Page------------------------*/
 .personal-info-details {
@@ -108,14 +136,24 @@ textarea {
     background-color: #B2CCC0;
     padding: 10px;
 }
-.personal-info-details-table dt{
-    width:200px;
-    padding: 5px;
-}
-.personal-info-details-table dd #text{
-    padding-top: 5px;
-    vertical-align:bottom;
-}
+    .personal-info-details-table dl {
+        /*display: table;*/
+    }
+
+    .personal-info-details-table dt {
+        width: 200px;
+        padding: 10px;
+        /*display: table-cell;*/
+    }
+    .personal-info-details-table dd {
+        padding: 10px;
+        /*display: table-cell;*/
+        vertical-align: bottom;
+    }
+    .personal-info-details-table dd span {
+        padding: 10px;
+        align-items:baseline;
+    }
 #edit-from-personal-info-details a{
     color: #649980;
 }
@@ -132,6 +170,10 @@ textarea {
     color: white;
     padding: 10px 200px;
     margin-top: 20px;
+}
+.personal-info-edit-table {
+    background-color: #B2CCC0;
+    padding: 10px;
 }
 
 .personal-info-edit a {
@@ -188,6 +230,10 @@ textarea {
 .cycle-create a {
     color: white;
 }
+.cycle-create-table {
+    background-color: #B2CCC0;
+    padding: 10px;
+}
 
 /*---------------------------Cycle Details Page--------------------------------*/
 .cycle-details {
@@ -199,6 +245,10 @@ textarea {
 
 .cycle-details a {
     color: white;
+}
+.cycle-details-table {
+    background-color: #B2CCC0;
+    padding: 10px;
 }
 
 /*---------------------------Cycle Edit Page--------------------------------*/
@@ -212,6 +262,10 @@ textarea {
 .cycle-edit a {
     color: white;
 }
+.cycle-edit-table {
+    background-color: #B2CCC0;
+    padding: 10px;
+}
 
 /*---------------------------Cycle Delete Page--------------------------------*/
 .cycle-delete {
@@ -223,6 +277,11 @@ textarea {
 
 .cycle-delete a {
     color: white;
+}
+.cycle-delete-table {
+    background-color: #B2CCC0;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 /*---------------------------Cycle List Item Page--------------------------------*/
@@ -236,6 +295,10 @@ textarea {
 .cycle-list a {
     color: white;
 }
+.cycle-list-table {
+    background-color: #B2CCC0;
+    padding: 10px;
+}
 
 /*---------------------------BBT Create Page--------------------------------*/
 .bbt-create {
@@ -247,6 +310,10 @@ textarea {
 
 .bbt-create a {
     color: white;
+}
+.bbt-create-table {
+    background-color: #B2CCC0;
+    padding: 10px;
 }
 
 /*---------------------------BBT Details Page--------------------------------*/
@@ -260,6 +327,10 @@ textarea {
 .bbt-details a {
     color: white;
 }
+.bbt-details-table {
+    background-color: #B2CCC0;
+    padding: 10px;
+}
 
 /*---------------------------BBT Edit Page--------------------------------*/
 .bbt-edit {
@@ -271,6 +342,10 @@ textarea {
 
 .bbt-edit a {
     color: white;
+}
+.bbt-edit-table {
+    background-color: #B2CCC0;
+    padding: 10px;
 }
 
 /*---------------------------BBT Delete Page--------------------------------*/
@@ -284,6 +359,11 @@ textarea {
 .bbt-delete a {
     color: white;
 }
+.bbt-delete-table {
+    background-color: #B2CCC0;
+    padding: 10px;
+    margin-bottom: 10px;
+}
 
 /*---------------------------BBT List Item Page--------------------------------*/
 .bbt-list {
@@ -296,7 +376,10 @@ textarea {
 .bbt-list a {
     color: white;
 }
-
+.bbt-list-table {
+    background-color: #B2CCC0;
+    padding: 10px;
+}
 
 /*---------------------------Log Page--------------------*/
 .log-table td, th{

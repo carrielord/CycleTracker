@@ -257,6 +257,7 @@
     <Content Include="Views\BasalBodyTemp\BBTEdit.cshtml" />
     <Content Include="Views\BasalBodyTemp\Delete.cshtml" />
     <Content Include="Views\Log\GoToViews.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\DateTimeOffset.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

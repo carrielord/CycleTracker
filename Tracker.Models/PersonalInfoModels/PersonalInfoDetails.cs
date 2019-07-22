@@ -33,7 +33,11 @@ namespace Tracker.Models.PersonalInfoModels
         public ReasonUsing WhyUsing { get; set; }
         [Display(Name = "Relevant medical history (PCOS, Endometriosis, STI's, Pelvic injuries or infections, etc.):")]
         public string MedicalHistory { get; set; }
+        [Display(Name = "Created Time")]
+
         public DateTimeOffset CreatedTime { get; set; }
+        [Display(Name = "Modified Time")]
+
         public DateTimeOffset? ModifiedTime { get; set; }
     }
 }

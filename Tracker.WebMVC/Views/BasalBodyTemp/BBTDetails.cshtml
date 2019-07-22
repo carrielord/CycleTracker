@@ -10,56 +10,58 @@
         <div>
             <h4>Basal Body Temparature Log Entry Details</h4>
             <hr />
-            <dl class="dl-horizontal">
-                @*<dt>
-                    @Html.DisplayNameFor(model => model.BBTID)
-                </dt>
+            <div class="bbt-details-table">
+                <dl class="dl-horizontal">
+                    @*<dt>
+                @Html.DisplayNameFor(model => model.BBTID)
+            </dt>
 
-                <dd>
-                    @Html.DisplayFor(model => model.BBTID)
-                </dd>*@
+            <dd>
+                @Html.DisplayFor(model => model.BBTID)
+            </dd>*@
 
-                <dt>
-                    @Html.DisplayNameFor(model => model.Temperature)
-                </dt>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Temperature)
+                    </dt>
 
-                <dd>
-                    @Html.DisplayFor(model => model.Temperature)
-                </dd>
+                    <dd>
+                        @Html.DisplayFor(model => model.Temperature)
+                    </dd>
 
-                <dt>
-                    @Html.DisplayNameFor(model => model.DateOfTemp)
-                </dt>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.DateOfTemp)
+                    </dt>
 
-                <dd>
-                    @Html.DisplayFor(model => model.DateOfTemp)
-                </dd>
+                    <dd>
+                        @Html.DisplayFor(model => model.DateOfTemp)
+                    </dd>
 
-                <dt>
-                    @Html.DisplayNameFor(model => model.Comments)
-                </dt>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Comments)
+                    </dt>
 
-                <dd>
-                    @Html.DisplayFor(model => model.Comments)
-                </dd>
+                    <dd>
+                        @Html.DisplayFor(model => model.Comments)
+                    </dd>
 
-                <dt>
-                    @Html.DisplayNameFor(model => model.CreatedTime)
-                </dt>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.CreatedTime)
+                    </dt>
 
-                <dd>
-                    @Html.DisplayFor(model => model.CreatedTime)
-                </dd>
+                    <dd>
+                        @Html.DisplayFor(model => model.CreatedTime)
+                    </dd>
 
-                <dt>
-                    @Html.DisplayNameFor(model => model.ModifiedTime)
-                </dt>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.ModifiedTime)
+                    </dt>
 
-                <dd>
-                    @Html.DisplayFor(model => model.ModifiedTime)
-                </dd>
+                    <dd>
+                        @Html.DisplayFor(model => model.ModifiedTime)
+                    </dd>
 
-            </dl>
+                </dl>
+            </div>
         </div>
         <p>
             @Html.ActionLink("Edit", "BBTEdit", new { id = Model.BBTID }) |
