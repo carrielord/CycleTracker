@@ -3,37 +3,39 @@
 @{
     ViewBag.Title = "Index";
 }
+    <div class="cycle-list">
+        <h2>Menstrual Cycle Log</h2>
 
-<h2>Index</h2>
+        <p>
+            @Html.ActionLink("Create New", "CycleCreate")
+        </p>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.DateStarted)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DateEnded)
+                </th>
+                <th></th>
+            </tr>
 
-<p>
-    @Html.ActionLink("Create New", "CycleCreate")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.DateStarted)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.DateEnded)
-        </th>
-        <th></th>
-    </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DateStarted)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DateEnded)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "CycleEdit", new { id = item.CycleID }) |
+                        @Html.ActionLink("Details", "CycleDetails", new { id = item.CycleID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.CycleID })
+                    </td>
+                </tr>
+            }
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.DateStarted)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DateEnded)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "CycleEdit", new {id=item.CycleID}) |
-            @Html.ActionLink("Details", "CycleDetails", new { id=item.CycleID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.CycleID })
-        </td>
-    </tr>
-}
-
-</table>
+        </table>
+    </div>

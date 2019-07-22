@@ -4,101 +4,109 @@
     ViewBag.Title = "PersonalInfoDetails";
 }
 
-<h2>Personal Information</h2>
+    <div class="personal-info-details">
+        <h2>Personal Information</h2>
 
-<div>
-    @Html.HiddenFor(model => model.UserID)
+        <div>
+            @Html.HiddenFor(model => model.UserID)
 
-    <h4>Details</h4>
-    <br />
-    @Html.ActionLink("New Personal Information", "PersonalInfoCreate", new { id = Model.UserID })
+            <h4>Details</h4>
+            <br />
 
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.FirstName)
-        </dt>
+            <hr />
+            <div class="personal-info-details-table">
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.FirstName)
+                    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.FirstName)
-        </dd>
+                    <dd>
+                        @Html.DisplayFor(model => model.FirstName)
+                    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.LastName)
-        </dt>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.LastName)
+                    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.LastName)
-        </dd>
+                    <dd>
+                        @Html.DisplayFor(model => model.LastName)
+                    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Age)
-        </dt>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Age)
+                    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Age)
-        </dd>
+                    <dd>
+                        @Html.DisplayFor(model => model.Age)
+                    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.PreviousPregnancies)
-        </dt>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.PreviousPregnancies)
+                    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.PreviousPregnancies)
-        </dd>
+                    <dd>
+                        @Html.DisplayFor(model => model.PreviousPregnancies)
+                    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ViablePreg)
-        </dt>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.ViablePreg)
+                    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.ViablePreg)
-        </dd>
+                    <dd>
+                        @Html.DisplayFor(model => model.ViablePreg)
+                    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.FailedPreg)
-        </dt>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.FailedPreg)
+                    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.FailedPreg)
-        </dd>
+                    <dd>
+                        @Html.DisplayFor(model => model.FailedPreg)
+                    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.TerminatedPreg)
-        </dt>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.TerminatedPreg)
+                    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.TerminatedPreg)
-        </dd>
+                    <dd>
+                        @Html.DisplayFor(model => model.TerminatedPreg)
+                    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.MedicalHistory)
-        </dt>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.MedicalHistory)
+                    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.MedicalHistory)
-        </dd>
+                    <dd>
+                        @Html.DisplayFor(model => model.MedicalHistory)
+                    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.CreatedTime)
-        </dt>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.CreatedTime)
+                    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.CreatedTime)
-        </dd>
+                    <dd>
+                        @Html.DisplayFor(model => model.CreatedTime)
+                    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ModifiedTime)
-        </dt>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.ModifiedTime)
+                    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.ModifiedTime)
-        </dd>
+                    <dd>
+                        @Html.DisplayFor(model => model.ModifiedTime)
+                    </dd>
 
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "PersonalInfoEdit", new { id = Model.UserID })
-    @Html.ActionLink("Delete", "Delete", new { id = Model.UserID })
+                </dl>
+            </div>
+        </div>
+        <p>
+            <div class="btn btn-default" id="edit-from-personal-info-details">
+                @Html.ActionLink("Edit", "PersonalInfoEdit", new { id = Model.UserID })
+            </div>
+            @*@Html.ActionLink("Delete", "Delete", new { id = Model.UserID })*@
+            <div class="btn btn-default" id="go-to-log-from-personal-info-details">
+                @Html.ActionLink("Go To Log", "GoToViews", "Log")
+            </div>
 
-</p>
+        </p>
+    </div>

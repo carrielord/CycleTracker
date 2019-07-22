@@ -1,7 +1,15 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+    <div class="about col-md-12">
+        <h2>@ViewBag.Title</h2>
+        <h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+        <p>Welcome to Natural Cycle Log! We want to help you achieve your fertility awareness goals, whether you're looking to prevent pregnancy, get pregnant, or just understand your body better. We offer comprehensive tracking, so you have one convenient place to combine menstrual cycle tracking and basal body temparature tracking. </p>
+        <h3>How it works</h3>
+        <p>For menstrual cycle tracking, simply enter the start and end date of your menstrual cycle. You can add comments if you wish to note anything different or just record any observations.</p>
+        <p>For basal body temperature tracking, you need a digital thermometer accurate to two decimal points. Take your temperature every morning, the moment you wake up. This is your basal body temperature.</p>
+        <div class="btn btn-default">
+            @Html.ActionLink("Sign Up", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })
+        </div>
+    </div>

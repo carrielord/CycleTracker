@@ -15,7 +15,7 @@ namespace Tracker.WebMVC.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Monitoring your fertility- naturally.";
 
             return View();
         }

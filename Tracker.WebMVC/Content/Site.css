@@ -1,6 +1,10 @@
-﻿body {
+﻿/*html {
+    font-family: 'Montserrat', sans-serif;
+}*/
+body {
     padding-top: 50px;
     padding-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -22,3 +26,294 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/*---------------------------Nav bar------------------------------------------*/
+.navbar {
+    background-color: #7d9964;
+}
+
+#navbar-text a {
+    color: white;
+    font-family: 'Assistant', sans-serif;
+}
+
+
+
+
+/*---------Home Page----------------*/
+/*#main-button-text a{
+    color: white;
+    text-decoration: none;
+}*/
+#main-info {
+    background-color: #649980;
+    color: white;
+    margin-top: 20px;
+    margin-left: -30px;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+#why-use {
+    background-color: #649980;
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    top: 120px;
+}
+
+#already-member {
+    background-color: #649980;
+    color: white;
+    margin-left: -30px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+.homepage-right-blurb{
+    float: right;
+}
+
+/*--------------About Page----------------*/
+.about {
+    background-color: #649980;
+    color: white;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+/*----------------Personal Info Create Page------------------------*/
+.personal-info-create {
+    background-color: #649980;
+    color: white;
+    padding: 10px 200px;
+    margin-top: 20px;
+}
+.personal-info-create a{
+    color: white;
+}
+
+/*----------------Personal Info Details Page------------------------*/
+.personal-info-details {
+    background-color: #649980;
+    color: white;
+    padding: 10px 200px;
+    margin-top: 20px;
+}
+
+.personal-info-details a {
+   color: white;
+}
+.personal-info-details-table {
+    background-color: #B2CCC0;
+    padding: 10px;
+}
+.personal-info-details-table dt{
+    width:200px;
+    padding: 5px;
+}
+.personal-info-details-table dd #text{
+    padding-top: 5px;
+    vertical-align:bottom;
+}
+#edit-from-personal-info-details a{
+    color: #649980;
+}
+#go-to-log-from-personal-info-details{
+    margin-left: 50px;
+}
+#go-to-log-from-personal-info-details a{
+    color: #649980;
+    font-size: 16px;
+}
+/*----------------Personal Info Edit Page------------------------*/
+.personal-info-edit {
+    background-color: #649980;
+    color: white;
+    padding: 10px 200px;
+    margin-top: 20px;
+}
+
+.personal-info-edit a {
+   color: white;
+}
+/*----------------------Log Landing Page----------------------*/
+.log-page-top {
+    background-color: #649980;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.log-page-top a{
+    font-size: 20px;
+}
+.log-page-top h2{
+    padding-left: 30px;
+}
+.log-page-bottom {
+    background-color: #649980;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.log-page-bottom a {
+    font-size: 20px;
+}
+.log-page-bottom h2 {
+    padding-left: 30px;
+}
+#log-top-button-left{
+    margin-left: 150px;
+}
+#log-top-button-right {
+    float: right;
+    margin-right: 150px;
+}
+#log-bottom-button-left {
+    margin-left: 150px;
+}
+#log-bottom-button-right {
+    float: right;
+    margin-right: 150px;
+}
+
+/*---------------------------Cycle Create Page--------------------------------*/
+.cycle-create {
+    background-color: #649980;
+    color: white;
+    padding: 10px 200px;
+    margin-top: 20px;
+}
+
+.cycle-create a {
+    color: white;
+}
+
+/*---------------------------Cycle Details Page--------------------------------*/
+.cycle-details {
+    background-color: #649980;
+    color: white;
+    padding: 10px 200px;
+    margin-top: 20px;
+}
+
+.cycle-details a {
+    color: white;
+}
+
+/*---------------------------Cycle Edit Page--------------------------------*/
+.cycle-edit {
+    background-color: #649980;
+    color: white;
+    padding: 10px 200px;
+    margin-top: 20px;
+}
+
+.cycle-edit a {
+    color: white;
+}
+
+/*---------------------------Cycle Delete Page--------------------------------*/
+.cycle-delete {
+    background-color: #649980;
+    color: white;
+    padding: 10px 200px;
+    margin-top: 20px;
+}
+
+.cycle-delete a {
+    color: white;
+}
+
+/*---------------------------Cycle List Item Page--------------------------------*/
+.cycle-list {
+    background-color: #649980;
+    color: white;
+    padding: 10px 200px;
+    margin-top: 20px;
+}
+
+.cycle-list a {
+    color: white;
+}
+
+/*---------------------------BBT Create Page--------------------------------*/
+.bbt-create {
+    background-color: #649980;
+    color: white;
+    padding: 10px 200px;
+    margin-top: 20px;
+}
+
+.bbt-create a {
+    color: white;
+}
+
+/*---------------------------BBT Details Page--------------------------------*/
+.bbt-details {
+    background-color: #649980;
+    color: white;
+    padding: 10px 200px;
+    margin-top: 20px;
+}
+
+.bbt-details a {
+    color: white;
+}
+
+/*---------------------------BBT Edit Page--------------------------------*/
+.bbt-edit {
+    background-color: #649980;
+    color: white;
+    padding: 10px 200px;
+    margin-top: 20px;
+}
+
+.bbt-edit a {
+    color: white;
+}
+
+/*---------------------------BBT Delete Page--------------------------------*/
+.bbt-delete {
+    background-color: #649980;
+    color: white;
+    padding: 10px 200px;
+    margin-top: 20px;
+}
+
+.bbt-delete a {
+    color: white;
+}
+
+/*---------------------------BBT List Item Page--------------------------------*/
+.bbt-list {
+    background-color: #649980;
+    color: white;
+    padding: 10px 200px;
+    margin-top: 20px;
+}
+
+.bbt-list a {
+    color: white;
+}
+
+
+/*---------------------------Log Page--------------------*/
+.log-table td, th{
+    padding: 10px;
+}
+.log-page {
+    background-color: #649980;
+    color: white;
+    padding: 10px 200px;
+    margin-top: 20px;
+}
+.log-page a{
+    color:white;
+}
+.log-table {
+    background-color: #B2CCC0;
+    margin-bottom: 20px;
+
+}
+
