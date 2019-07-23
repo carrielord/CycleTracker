@@ -32,7 +32,7 @@ namespace Tracker.WebMVC.Controllers
             if (service.CreateCycle(model))
             {
                 TempData["SaveResult"] = "Your cycle has been entered.";
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "Log");
             }
             ModelState.AddModelError("", "Cycle could not be logged.");
             return View(model);
@@ -65,13 +65,13 @@ namespace Tracker.WebMVC.Controllers
             if (model.CycleID != id)
             {
                 ModelState.AddModelError("", "ID Mismatch");
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "Log");
             }
             var service = CreateTrackerService();
             if (service.UpdateCycle(model))
             {
                 TempData["SaveResult"] = "Your cycle log has been updated.";
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "Log");
             }
             ModelState.AddModelError("", "Your cycle log could not be updated.");
             return View(model);
@@ -91,7 +91,7 @@ namespace Tracker.WebMVC.Controllers
             var service = CreateTrackerService();
             service.DeleteCycle(id);
             TempData["SaveResult"] = "Your cycle log entry was deleted";
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "Log");
         }
 
         private CycleService CreateTrackerService()

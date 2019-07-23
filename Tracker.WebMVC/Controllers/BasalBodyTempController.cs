@@ -31,7 +31,7 @@ namespace Tracker.WebMVC.Controllers
             if (service.CreateBBT(model))
             {
                 TempData["SaveResult"] = "Your temperature has been entered.";
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "Log");
             }
             ModelState.AddModelError("", "Temperature could not be logged.");
             return View(model);
@@ -64,13 +64,13 @@ namespace Tracker.WebMVC.Controllers
             if (model.BBTID != id)
             {
                 ModelState.AddModelError("", "ID Mismatch");
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "Log");
             }
             var service = CreateTrackerService();
             if (service.UpdateBBT(model))
             {
                 TempData["SaveResult"] = "Your temperature log has been updated.";
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "Log");
             }
             ModelState.AddModelError("", "Your temperature log could not be updated.");
             return View(model);
@@ -90,7 +90,7 @@ namespace Tracker.WebMVC.Controllers
             var service = CreateTrackerService();
             service.DeleteBBT(id);
             TempData["SaveResult"] = "Your temperature log entry was deleted";
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "Log");
         }
 
 
