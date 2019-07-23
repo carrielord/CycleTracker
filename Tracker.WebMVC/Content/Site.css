@@ -416,6 +416,11 @@ textarea {
 .log-table {
     background-color: #B2CCC0;
     margin-bottom: 20px;
-
+}
+#log-page-go-to-cycle-create a{
+    color: #649980;
 }
 
+#log-page-go-to-bbt-create a {
+    color: #649980;
+}
